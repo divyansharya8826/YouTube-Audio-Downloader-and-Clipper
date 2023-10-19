@@ -1,14 +1,13 @@
 from tkinter import (Button, Canvas, PhotoImage, StringVar, Tk, ttk , filedialog)
 from pytube import YouTube
 from moviepy.editor import AudioFileClip
-import os
 
 root = Tk()
 root.geometry("800x600")
 root.resizable(width=1024,height=768)   # type: ignore
 root.title("YouTube Audio Cliper")
-bg = PhotoImage(file = "i.ppm")
-bg2 = PhotoImage(file = "youtubevanced.png")
+bg = PhotoImage(file = "Python/YouTube Audio Downloader and Clipper/i.ppm")
+bg2 = PhotoImage(file = "Python/YouTube Audio Downloader and Clipper/youtubevanced.png")
 canvas1 = Canvas(root,width=1024,height=768)
 canvas1.pack(fill = "both", expand = True)
 canvas1.create_image(0 , 0 , image = bg , anchor = "nw")
